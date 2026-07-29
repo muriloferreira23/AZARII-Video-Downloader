@@ -1,8 +1,23 @@
+/*Teste correção de rolagem horizontal se deus quiser*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
 /*Parte Index*/
 #logo {
     width: 120px;
     height: auto;
-    transform: translate(-10%, -5px);
+    display: block;
 }
 
 #logo-link {
@@ -12,6 +27,7 @@
 
     display: flex;
     align-items: center;
+    justify-content: center;
     
     width: fit-content;
     height: fit-content;
@@ -156,6 +172,21 @@ header {
     color: black;
     padding: 80px 20px;
     text-align: center;
+
+    animation: degrade linear both;
+    animation-timeline: view();
+    animation-range: entry 0% exit 0%;
+}
+
+@keyframes degrade {
+    0%, 15% {
+        background-color: black;
+        color: white;
+    }
+    85%, 100% {
+        background-color: white;
+        color: black;
+    }
 }
 
 #mais-info h2 {
@@ -175,6 +206,28 @@ header {
 
 /*Parte Downloads*/
 
+/*Parte Contato*/
+
+.textocontato {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1a1a1a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+    background: linear-gradient(135deg, #6c63ff, #3b3b98);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0 , 0, 0, 0.5);
+}
+.caixanome {
+    margin-bottom: 16px;
+}
+
+.disgraça {
+
+}
+
 /*Body*/
 body {
     margin: 0;
@@ -184,7 +237,7 @@ body {
 
 /*Rodapé*/
 .rodape {
-    background-color: #333;
+    background-color: black;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -192,7 +245,7 @@ body {
 
 .rodape-content nav a{
     color: white;
-    margin 0 10px;
+    margin: 0 10px;
     text-decoration: none;
 }
 
