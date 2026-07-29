@@ -257,8 +257,9 @@ textarea{
 input:focus,
 select:focus,
 textarea:focus{
-    min-height: 180px;
-    resize: none;
+    border-color: #4a90e2;
+
+    box-shadow: 0, 0, 8px rgba(74, 144, 226, .25);
 }
 
 button {
@@ -285,8 +286,10 @@ button:hover{
     background: #333;
 }
 
-.disgraça {
+textarea {
+    min-height: 180px;
 
+    resize: none; 
 }
 /*Body*/
 body {
