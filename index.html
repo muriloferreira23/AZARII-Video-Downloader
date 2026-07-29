@@ -1,75 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<div class="header-scroll-container">
-    <header class="header-animado">  
+  <body>
+    <div class="header-scroll-container">
+      <header class="header-animado">
         <video autoplay muted loop playsinline id="notebook">
-        <source src="videos/Azarii.mp4" type="video/mp4">
+          <source src="videos/Azarii.mp4" type="video/mp4" />
         </video>
 
         <div class="nav-bar">
+          <button id="menuindx">☰ Menu</button>
 
-            <button id="menuindx">☰ Menu</button> 
-            
-            <a href="index.html" id="logo-link">
-            <img src="images/alogo.png" id="logo" alt="Logo Azarii">
-            </a>
-
+          <a href="index.html" id="logo-link">
+            <img src="images/alogo.png" id="logo" alt="Logo Azarii" />
+          </a>
         </div>
         <div id="hero">
-
-            <h1>Seu download sem anúncios.</h1>
-            <a href="downloads.html" id="botaohero">Começar agora</a>
-        
+          <h1>Seu download sem anúncios.</h1>
+          <a href="paginas/downloads.html" id="botaohero">Começar agora</a>
         </div>
 
         <nav id="omenu">
-
-            <a href="downloads.html">Downloads</a>
-            <a href="contato.html">Contato</a>
-            
+          <!--Itens do Menu-->
+          <ul class="menu-lista">
+            <li>
+              <a href="../index.html"><span class="icone">🏠</span> Início</a>
+            </li>
+            <li>
+              <a href="../paginas/downloads.html"
+                ><span class="icone">📊</span> Downloads</a
+              >
+            </li>
+            <li>
+              <a href="../paginas/conversor.html"
+                ><span class="icone">📋</span> Conversor</a
+              >
+            </li>
+            <li>
+              <a href="../paginas/contato.html"
+                ><span class="icone">📝</span> Contato</a
+              >
+            </li>
+          </ul>
         </nav>
-
-    </header>
-</div>
-
-<section class="informacoes"s>
-    <h2 id="Infos">Informações</h2>
-    <div class="cards-container">
-        <div class="Card1">
-            <h3>Sem Anúncios</h3>
-            <p>Desfrute de uma experiência de download sem interrupções por anúncios.</p>
-        </div>
-        <div class="Card2">
-            <h3>Gratuito</h3>
-            <p>Nossa ferramenta é completamente gratuita para todos os usuários.</p>
-        </div>
-        <div class="Card3">
-            <h3>Fácil de Usar</h3>
-            <p>Interface intuitiva que permite downloads rápidos e de maneira simples.</p>
-        </div>
-        </div>
+      </header>
     </div>
+
+    <section class="informacoes">
+  <div class="glow"></div>
+  <h2 id="Infos">Informações</h2>
+  <p class="subtitle">
+    Tudo o que você precisa saber sobre nossa ferramenta.
+  </p>
+  <div class="cards-container">
+    <div class="Card1">
+      <span class="icon">🚫</span>
+      <h3>Sem Anúncios</h3>
+      <p>Desfrute de uma experiência de download sem interrupções por anúncios.</p>
+    </div>
+    <div class="Card2">
+      <span class="icon">🎯</span>
+      <h3>Gratuito</h3>
+      <p>Nossa ferramenta é completamente gratuita para todos os usuários.</p>
+    </div>
+    <div class="Card3">
+      <span class="icon">⚡</span>
+      <h3>Fácil de Usar</h3>
+      <p>Interface intuitiva que permite downloads rápidos e de maneira simples.</p>
+    </div>
+    <div class="Card4">
+      <span class="icon">🔄</span>
+      <h3>Conversor</h3>
+      <p>Converta arquivos para diversos formatos de video ou áudio.</p>
+    </div>
+  </div>
 </section>
 
-<footer class="rodape">
-    <div class="rodape-content">
+    <footer class="rodape">
+      <div class="rodape-content">
         <p>&copy; 2026 Azarii. Todos os direitos reservados.</p>
         <nav>
-            <a href="privacidade.html">Privacidade</a>
+          <a href="../privacidade.html">Privacidade</a>
         </nav>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-<script src="javascript/index.js"></script>
-</body>
+    <script src="javascript/index.js"></script>
+  </body>
 </html>

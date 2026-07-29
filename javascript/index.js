@@ -4,12 +4,20 @@
 const botao = document.getElementById("menuindx");
 const menu = document.getElementById("omenu");
 
-botao.addEventListener("click", function(){
+// Abrir/fechar essa dsgraça de botão do caralho
 
-    if(menu.style.display === "flex"){
-        menu.style.display = "none";
-    }else{
-        menu.style.display = "flex";
+  botao.addEventListener('click', function() {
+    menu.classList.toggle('aberto'); // Disgarça
+
+});  
+
+// ===================================
+// Fechar o menu e abrir o cu
+// ===================================
+
+document.addEventListener('click', function(evento) {
+    if (!menu.contains(evento.target) && !botao.contains(evento.target)) {
+        menu.classList.remove("aberto");
     }
 
 });
@@ -18,3 +26,8 @@ botao.addEventListener("click", function(){
 // Vídeo 
 //===================
 const video = document.getElementById("notebook");
+
+
+
+
+// O DIABO NÃO VERÁ ISSO - alguem corrijirá

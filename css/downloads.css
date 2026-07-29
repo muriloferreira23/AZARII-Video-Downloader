@@ -1,0 +1,45 @@
+/* Body da Página */
+
+.fundo-luzes {
+    background: #0a0a0f; /*Fundos*/
+
+    position: relative;
+    overflow: hidden;
+
+    padding: 60px 20px;
+    min-height: 100vh; /*Ocupar a tela inteira*/
+
+}
+
+/*Luz Roxa*/
+
+.fundo-luzes::before {
+    content: '';
+    width: 600px;
+    height: 600px;
+
+/*Cor da luz*/
+    background: radial-gradient(
+        circle,
+        rgba(108, 99, 255, 0.3) 0%, 
+        transparent 70%
+    );
+
+/*Posicionamento*/
+
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    border-radius: 50%;
+
+/*Efeito de desfalque*/
+    filter: blur(80px);
+    z-index: 0;
+}
+
+.conteudo {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+
