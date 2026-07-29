@@ -54,6 +54,10 @@ header {
     margin-top: -7px;
 }
 
+#menuindx:hover {
+    color: black;
+}
+
 /*Parte do Vídeo*/
 #notebook {
     position: absolute;
