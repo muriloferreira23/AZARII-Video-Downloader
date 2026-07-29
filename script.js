@@ -16,7 +16,7 @@ botao.addEventListener("click", function(){
 });
 
 //===================
-// Vídeo
+// Vídeo 
 //===================
 const video = document.getElementById("notebook");
     
