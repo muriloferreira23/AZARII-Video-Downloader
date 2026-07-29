@@ -149,6 +149,15 @@ header {
     border-radius: 12px;
     backdrop-filter: blur(8px);
 }
+
+/*Parte Informações*/
+#mais-info {
+    background-color: #0b0c10; 
+    color: #ffffff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
 /*Parte Downloads*/
 
 /*Body*/
