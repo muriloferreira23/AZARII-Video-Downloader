@@ -1,5 +1,16 @@
 /* Body da Página */
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    background-color: black;
+    padding: 10px;
+    display: flex;
+}
+
 .fundo-luzes {
     background: #0a0a0f; /*Fundos*/
 

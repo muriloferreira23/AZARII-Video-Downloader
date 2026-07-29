@@ -1,27 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Azarii Loads | Site oficial</title>
     <!-- Icone do navegador-->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⬇️</text></svg>">
-    <link rel="stylesheet" href="../css/downloads.css">
-    <link rel="stylesheet" href="../style.css">
-</head>
-<body class="pagina-downloader">
-<div class="header"
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⬇️</text></svg>"
+    />
+    <link rel="stylesheet" href="../css/downloads.css" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body class="pagina-downloader">
+    <!--Fundo com luzes-->
+    <section class="fundo-luzes">
+      <!--Titulos, formularios e textos-->
 
+      <div class="header-scroll-container">
+        <header class="header-animado">
+          <div class="nav-bar">
+            <button id="menuindx">☰ Menu</button>
 
-<!--Fundo com luzes-->
-<section class="fundo-luzes">
-    <!--Titulos, formularios e textos-->
-    <div class="conteudo">
+            <a href="../index.html" id="logo-link">
+              <img src="../images/alogo.png" id="logo" alt="Logo Azarii" />
+            </a>
+          </div>
+
+          <nav id="omenu">
+            <!--Itens do Menu-->
+            <ul class="menu-lista">
+              <li>
+                <a href="../index.html"><span class="icone">🏠</span> Início</a>
+              </li>
+              <li>
+                <a href="../paginas/downloads.html"
+                  ><span class="icone">📊</span> Downloads</a
+                >
+              </li>
+              <li>
+                <a href="../paginas/conversor.html"
+                  ><span class="icone">📋</span> Conversor</a
+                >
+              </li>
+              <li>
+                <a href="../paginas/contato.html"
+                  ><span class="icone">📝</span> Contato</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+      <div class="conteudo">
         <h2>Entre em contato</h2>
         <p>Contúdo Teste</p>
-    </div>
-</section>
-</body>
-<script src="../javascript/index.js"></script>
-<script src="../javascript/downloads.js"></script>
+      </div>
+    </section>
+  </body>
+  <script src="../javascript/index.js"></script>
+  <script src="../javascript/downloads.js"></script>
 </html>
