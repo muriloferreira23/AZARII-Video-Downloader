@@ -152,10 +152,25 @@ header {
 
 /*Parte Informações*/
 #mais-info {
-    background-color: #0b0c10; 
-    color: #ffffff;
+    background-color: white; 
+    color: black;
     padding: 80px 20px;
     text-align: center;
+}
+
+#mais-info h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    color: black;
+}
+
+#mais-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    color: black;
 }
 
 /*Parte Downloads*/
