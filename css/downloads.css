@@ -3,12 +3,20 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
 }
 
 .nav-bar {
     background-color: black;
     padding: 10px;
     display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .fundo-luzes {
@@ -16,8 +24,6 @@
 
     position: relative;
     overflow: hidden;
-
-    padding: 60px 20px;
     min-height: 100vh; /*Ocupar a tela inteira*/
 
 }
@@ -53,4 +59,5 @@
     z-index: 1;
     color: #fff;
 }
+
 
