@@ -8,6 +8,15 @@
 
 body {
     margin: 0;
+    background-color: #11171d;
+    /*Degradê radial*/
+    background-image: radial-gradient(circle at 50% 50%, #202831 0%, #11171d 60%, #040608 100%);
+    /*Fundo cobrindo as porra tudo*/
+    background-attachment: fixed;
+    background-size: cover;
+
+    /*Cor do texto para contraste*/
+    color: #e0e0e0
 }
 
 .nav-bar {
@@ -19,39 +28,8 @@ body {
     align-items: center;
 }
 
-.fundo-luzes {
-    background: #0a0a0f; /*Fundos*/
-
-    position: relative;
-    overflow: hidden;
-    min-height: 100vh; /*Ocupar a tela inteira*/
-
-}
-
-/*Luz Roxa*/
-
-.fundo-luzes::before {
-    content: '';
-    width: 600px;
-    height: 600px;
-
-/*Cor da luz*/
-    background: radial-gradient(
-        circle,
-        rgba(108, 99, 255, 0.3) 0%, 
-        transparent 70%
-    );
-
-/*Posicionamento*/
-
-    position: absolute;
-    top: -200px;
-    right: -200px;
-    border-radius: 50%;
-
-/*Efeito de desfalque*/
-    filter: blur(80px);
-    z-index: 0;
+#menuindx {
+ left: 35px;
 }
 
 .conteudo {
