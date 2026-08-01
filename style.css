@@ -33,7 +33,6 @@ body {
   font-family: sans-serif;
 }
 
-/*Header*/
 .nav-bar {
   background-color: black;
   padding: 10px 20px;
@@ -42,17 +41,29 @@ body {
 .bar-content {
   display: flex;
   align-items: center;
-  justify-content: center; 
-  gap: 15px; 
-}
-
-.logo {
-  display: flex;
-  margin: 0 auto; 
+  position: relative;
   height: 50px;
 }
 
-.b-downloader a, .b-conversor a, .b-contato a {
+.logo {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo img {
+  height: 35px; 
+  width: auto;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+  margin-left: auto;
+}
+
+.b-downloader a, .b-conversor a, .b-contato a, .b-sobre a {
   text-decoration: none;
   color: black;
   padding: 8px 15px;
