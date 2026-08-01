@@ -54,12 +54,14 @@ body {
 
 .caixa-disgraça input {
     flex: 1;
-    padding: 18px;
+    padding: 18px;                                     
     background: #121212;
 
-    border: 1px solid #2a2a2a;
+    border: none;
     color: white;
     border-radius: 15px;
+
+    outline: none;
 }
 
 .caixa-disgraça button {

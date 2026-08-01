@@ -33,10 +33,15 @@ body {
   font-family: sans-serif;
 }
 
-/*Cabeçalho*/
+/*Cabeçalho vulgo Renato*/
 .nav-bar {
-  background-color: black;
+  background-color: transparent;
   padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 .bar-content {
@@ -68,7 +73,7 @@ body {
   text-decoration: none;
   color: black;
   padding: 8px 15px;
-  background-color: rgba(160, 60, 255);
+  background-color: #a03cff;
   border-radius: 5px;
   display: inline-block;
 }
