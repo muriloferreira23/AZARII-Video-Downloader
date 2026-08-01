@@ -5,59 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
-      rel="stylesheet"
-    />
   </head>
 
   <body>
-    <div class="header-scroll-container">
-      <header class="header-animado">
-        <video autoplay muted loop playsinline id="notebook">
-          <source src="videos/Azarii.mp4" type="video/mp4" />
-        </video>
-
-        <div class="nav-bar">
-          <button id="menuindx">☰ Menu</button>
-
-          <a href="index.html" id="logo-link">
-            <img src="images/alogo.png" id="logo" alt="Logo Azarii" />
+    <!-- Cabeçalho -->
+    <header class="nav-bar">
+      <div class="bar-content">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/alogo.png" alt="Logo do site">
           </a>
         </div>
-        <div id="hero">
-          <h1>Seu download sem anúncios.</h1>
-          <a href="paginas/downloads.html" id="botaohero">Começar agora</a>
+        <div class="b-downloader">
+          <a href="paginas/downloads.html">Downloader</a>
         </div>
-
-        <nav id="omenu">
-          <!--Itens do Menu-->
-          <ul class="menu-lista">
-            <li>
-              <a href="index.html"><span class="icone">🏠</span> Início</a>
-            </li>
-            <li>
-              <a href="paginas/downloads.html"
-                ><span class="icone">📊</span> Downloads</a
-              >
-            </li>
-            <li>
-              <a href="paginas/conversor.html"
-                ><span class="icone">📋</span> Conversor</a
-              >
-            </li>
-            <li>
-              <a href="paginas/contato.html"
-                ><span class="icone">📝</span> Contato</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <div class="b-conversor">
+          <a href="paginas/conversor.html">Conversor</a>
+        </div>
+        <div class="b-contato">
+          <a href="paginas/contato.html">Contato</a>
+        </div>
+      </div>
       </header>
     </div>
 
+    <!-- Seção de informações -->
     <section class="informacoes">
       <div class="glow"></div>
       <h2 id="Infos">Informações</h2>
@@ -74,7 +46,7 @@
           </p>
         </div>
         <div class="Card2">
-          <span class="icon">🎯</span>
+          <span class="icon">💰</span>
           <h3>Gratuito</h3>
           <p>
             Nossa ferramenta é completamente gratuita para todos os usuários.
@@ -100,7 +72,7 @@
       <div class="rodape-content">
         <p>&copy; 2026 Azarii. Todos os direitos reservados.</p>
         <nav>
-          <a href="privacidade.html">Privacidade</a>
+          <a href="paginas/privacidade.html">Privacidade</a>
         </nav>
       </div>
     </footer>

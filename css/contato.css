@@ -94,11 +94,6 @@ textarea {
     background-color: white;
 }
 
-.pagina-contato header {
-    height: 90px;
-    padding: 20px 50px;
-}
-
 .pagina-contato section {
     max-width: 900px;
     margin: 80px auto;
@@ -107,8 +102,4 @@ textarea {
 
 .pagina-contato .rodape{
     margin-top: 80px;
-}
-
-.header-animado {
-    background-color: black;
 }

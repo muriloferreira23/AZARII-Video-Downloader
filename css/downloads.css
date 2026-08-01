@@ -19,23 +19,55 @@ body {
     color: #e0e0e0
 }
 
-.nav-bar {
-    background-color: black;
-    padding: 10px;
-    display: flex;
+/*Hero de cima, texto.*/
+
+.hero-download {
     width: 100%;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+
     align-items: center;
+    justify-content: center;
+    margin-top: 80px;
 }
 
-#menuindx {
- left: 35px;
+.hero-download h1 {
+    font-size: 60px;
+    color: white;
 }
 
-.conteudo {
-    position: relative;
-    z-index: 1;
-    color: #fff;
+.hero-download p {
+    color: #B6B6B6;
+    font-size: 20px;
+    margin-top: 15px;
 }
 
+/* Caixa Disgraça */
 
+.caixa-disgraça {
+    width: 800px;
+    display: flex;
+    gap: 15px;
+
+    margin: 40px auto;
+}
+
+.caixa-disgraça input {
+    flex: 1;
+    padding: 18px;
+    background: #121212;
+
+    border: 1px solid #2a2a2a;
+    color: white;
+    border-radius: 15px;
+}
+
+.caixa-disgraça button {
+    padding: 18px 35px;
+    background: #786cff;
+    color: white;
+
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
