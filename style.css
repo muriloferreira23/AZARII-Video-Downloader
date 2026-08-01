@@ -35,13 +35,12 @@ body {
 
 /*Cabeçalho vulgo Renato*/
 .nav-bar {
-  background-color: transparent;
-  padding: 10px 20px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
+background-color: transparent;
+position: fixed;
+
+top: 0;
+left: 0;
+width: 100%;
 }
 
 .bar-content {
