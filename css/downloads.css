@@ -1,5 +1,4 @@
 /* Body da Página */
-
 * {
     margin: 0;
     padding: 0;
@@ -8,38 +7,77 @@
 
 body {
     margin: 0;
-    background-color: #11171d;
-    /*Degradê radial*/
-    background-image: radial-gradient(circle at 50% 50%, #202831 0%, #11171d 60%, #040608 100%);
-    /*Fundo cobrindo as porra tudo*/
-    background-attachment: fixed;
+    min-height: 100vh;
+    background-color: #0e141b;  /* Cor base */
+    
+    /* Degradê */
+    background-image: radial-gradient(circle at 50% 50%, #19232d 0%, #0a0e13 70%, #05080c 100%);
+    background-attachment: fixed; /* Efeitos importantes para o fundo fixo*/
     background-size: cover;
 
-    /*Cor do texto para contraste*/
-    color: #e0e0e0
+    color: #e0e0e0;
 }
 
-/*Hero de cima, texto.*/
-
-.hero-download {
+.nav-bar {
+    background-color: black;
+    padding: 10px 20px;
+    display: flex;
     width: 100%;
     display: flex;
     flex-direction: column;
 
     align-items: center;
-    justify-content: center;
-    margin-top: 80px;
+    position: relative;
+    z-index: 10;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
 }
 
-.hero-download h1 {
-    font-size: 60px;
-    color: white;
+.fundo-luzes {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh; /*Ocupar a tela inteira*/
+
+}
+
+/*Luz*/
+
+.fundo-luzes::before {
+    content: '';
+    width: 600px;
+    height: 600px;
+
+/*Cor da luz*/
+    background: radial-gradient(
+        circle,
+        rgba(200, 210, 220, 0.15) 0%, 
+        transparent 70%
+    );
+
+/*Posicionamento*/
+
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    border-radius: 50%;
+
+/*Efeito de desfalque*/
+    filter: blur(80px);
+    z-index: 0;
 }
 
 .hero-download p {
     color: #B6B6B6;
     font-size: 20px;
     margin-top: 15px;
+}
+
+.textos-central {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: center;
+    text-align: center;
 }
 
 /* Caixa Disgraça */
