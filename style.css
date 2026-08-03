@@ -38,9 +38,6 @@ body {
   padding-top: 70px;
   min-height: 100vh;
   font-family: sans-serif;
-
-  display: flex;
-  flex-direction: column;
 }
 
 /* Header vulgo Pobrema */
@@ -114,10 +111,9 @@ body {
 /*FIM DO HEADER */
 /*Rodapé*/
 .rodape {
-  margin-top: auto;
+  margin-top: 0;
   background-color: rgb(37, 37, 37);
   color: white;
-
   padding: 20px 0;
   text-align: center;
 }
