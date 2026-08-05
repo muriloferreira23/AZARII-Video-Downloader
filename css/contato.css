@@ -5,11 +5,15 @@
     flex-direction:column;
     align-items:center;        
 
-    justify-content:center;
+    width: 100%;
     text-align:center;
     min-height: 100vh;
 
+    max-width: 1300px;
+    margin: 0 auto;
     background:transparent;
+
+    padding: 30px 30px 80px;
 }
 
 .badge-contato {
@@ -22,16 +26,16 @@
     font-size:13px;
 
     font-weight:600;
-    margin-bottom:30px;
+    margin-bottom:18px;
 }
 
 .hero-contato h1{
     color: white;
-    font-size: 60px;
+    font-size: 64px;
     font-weight: 700;
 
-    margin-bottom: 20px;
-    text-align: left;
+    margin-bottom: 18px;
+    text-align: center;
 }
 
 .hero-contato span{
@@ -46,21 +50,32 @@
     max-width:700px;
     text-align: left;
 }
+/* Subtitulozin embaixo ne tlgd ne */
+.subtitulo-contato {
+    color: #b7b7c5;
+    font-size: 20px;
+    line-height: 1.7;
+
+    text-align: center;
+    max-width: 700px;
+    margin-bottom: 70px;
+}
 /* card do formulario ne, saporra*/
 
 .form-card {
-background:rgba(255,255,255,.05);
-border:1px solid rgba(255,255,255,.08);
-backdrop-filter:blur(18px);
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(18px);
 
--webkit-backdrop-filter:blur(18px);
-border-radius:24px;
-padding:40px;
+    -webkit-backdrop-filter:blur(18px);
+    border-radius:24px;
+    padding:40px;
 
-box-shadow:
+    box-shadow:
 
-0 25px 60px rgba(0,0,0,.45);
+    0 25px 60px rgba(0,0,0,.45);
 
+    width: 100%;
 }
 
 form {
@@ -72,16 +87,14 @@ form {
 /* Grid principal */
 
 .contato-grid {
-    max-width:1200px;
-    margin:80px auto;
+    width: 100%;
     display:grid;
 
     grid-template-columns: 3fr 2fr;
-    gap:35px;
-    background:none;
+    align-items: start;
 
-    border:none;
-    box-shadow:none;
+    gap:35px;
+    margin-top: 60px;
 }
 
 /* FAQ - CARD */
@@ -93,6 +106,10 @@ form {
 
     border-radius: 24px;
     padding: 30px;
+    width: 100%;
+
+    position: sticky;
+    top: 100px;
 }
 
 .faq-card h3 {
@@ -102,7 +119,6 @@ form {
 }
 
 .faq-card button{
-
     width:100%;
     margin-bottom:12px;
     padding:18px 20px;
@@ -126,14 +142,23 @@ form {
     background:rgba(160,60,255,.18);
 
 }
+/* Botão FAQ */
+
+.faq-resposta {
+    max-height: 0;
+    overflow: hidden;
+
+    transition: .35s ease;
+    color: #cfcfcf;
+}
+
+.faq-resposta.ativa {
+    max-height: 300px;
+    margin-bottom: 15px;
+}
 
 .caixanome {
     margin-bottom: 16px;
-}
-section {
-    max-width: 900px;
-    margin: 70px auto;
-    padding: 0 20px;
 }
 
 section p{
@@ -225,11 +250,6 @@ textarea {
     filter:blur(90px);
     pointer-events:none;
     z-index:-1;
-}
-.pagina-contato section {
-    max-width: 900px;
-    margin: 80px auto;
-    padding: 0 20px;
 }
 
 .pagina-contato .rodape{
