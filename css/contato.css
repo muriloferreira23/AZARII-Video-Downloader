@@ -69,7 +69,7 @@
 
     -webkit-backdrop-filter:blur(18px);
     border-radius:24px;
-    padding:40px;
+    padding:45px;
 
     box-shadow:
 
@@ -90,11 +90,11 @@ form {
     width: 100%;
     display:grid;
 
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 2fr 1fr;
     align-items: start;
 
     gap:35px;
-    margin-top: 60px;
+    margin-top: 10px;
 }
 
 /* FAQ - CARD */
@@ -156,7 +156,6 @@ form {
     max-height: 300px;
     margin-bottom: 15px;
 }
-
 .caixanome {
     margin-bottom: 16px;
 }
@@ -177,27 +176,38 @@ input,
 select,
 textarea{
     width:100%;
-    padding:18px;
+    padding:20px;
     margin-bottom:25px;
 
-    border:2px solid #e5e5e5;
+    border:1px solid rgba(255,255,255,.12);
     border-radius:15px;
     font-size:18px;
 
     outline:none;
     transition:.3s;
+    background-color: transparent;
 }
 
 input:focus,
 select:focus,
 textarea:focus{
-    border-color: #4a90e2;
+    border-color: gray;
 
     box-shadow: 0, 0, 8px rgba(74, 144, 226, .25);
 }
 
+/* Nome e e-mail mema linha tlgd */
+.linha-form {
+    display: flex;
+    gap: 20px;
+}
+
+.caixanome,
+.caixaemail{
+    flex: 1;
+}
 button {
-    width:100%;
+    width:45%;
     padding:18px;
     background:#111;
 
@@ -238,13 +248,13 @@ textarea {
     border-radius:50%;
     background:radial-gradient(
 
-        circle,
+    circle,
 
-        rgba(150,90,255,.22) 0%,
+    rgba(150,90,255,.22) 0%,
 
-        rgba(150,90,255,.12) 35%,
+    rgba(150,90,255,.12) 35%,
 
-        transparent 75%
+    transparent 50%
     );
 
     filter:blur(90px);
