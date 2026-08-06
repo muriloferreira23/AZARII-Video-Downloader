@@ -5,9 +5,11 @@
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
+body { 
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
+    margin: 0;
     background-color: #0e141b;  /* Cor base */
     
     /* Degradê */
@@ -16,6 +18,10 @@ body {
     background-size: cover;
 
     color: #e0e0e0;
+}
+
+.main-download {
+    flex: 1;
 }
 
 .nav-bar {
@@ -110,4 +116,23 @@ body {
     border: none;
     border-radius: 15px;
     cursor: pointer;
+}
+
+/*Rodapé*/
+.rodape {
+  margin-top: 0;
+  background-color: rgb(37, 37, 37);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.rodape-content nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.rodape-content nav a:hover {
+  text-decoration: underline;
 }
